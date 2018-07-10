@@ -1,0 +1,16 @@
+group 'komandor'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':devices:comport')
+
+    compile parent_libs.log4j
+    testCompile parent_libs.junit
+}
